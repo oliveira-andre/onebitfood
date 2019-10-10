@@ -16,4 +16,12 @@ class Restaurant < ApplicationRecord
   validates :delivery_tax, presence: true
   validates :city, presence: true
   validates :street, presence: true
+
+  geocoded_by :address
+
+  after_validation :geocode
+
+  def address
+    [street, number, city, state].compact.join(', ')
+  end
 end
