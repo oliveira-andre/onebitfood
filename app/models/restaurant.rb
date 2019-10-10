@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Restaurant < ApplicationRecord
+  enum status: { closed: 0, open: 1 }
+
   belongs_to :category
   has_many :product_categories
   has_many :orders
