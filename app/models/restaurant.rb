@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Restaurant < ApplicationRecord
+  has_one_attached :image
+
   enum status: { closed: 0, open: 1 }
 
   belongs_to :category
