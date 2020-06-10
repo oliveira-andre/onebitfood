@@ -7,7 +7,7 @@ gem 'rails', '~> 5.2.3'
 gem 'sqlite3'
 gem 'puma', '~> 3.11'
 gem 'ransack'
-gem 'geocoder', '~> 1.5', '>= 1.5.1'
+gem 'geocoder', '~> 1.6'
 gem 'active_model_serializers', '~> 0.10.2'
 gem 'bootsnap', '>= 1.1.0', require: false
 
